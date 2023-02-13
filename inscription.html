@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="top">
+        <div class="accueil">
+            <h1>Amphigouri</h1>
+            <h1>Ligue d'improvisation du cégep de Rimouski</h1>
+        </div>
+    </header>
+    <main>
+      <nav>
+            <div class="animation-menu">
+                <a href="index.html"><img id="logo" src="images/logo.jpg" alt="logo"></a>
+                <a class="texte actif" id="tournois" href="inscription.html">Inscription</a>
+                <a class="texte" id="photos" href="photos.html">Galerie</a>
+                <a class="texte" id="horaire" href="horaire.html">Horaire</a>
+                <a class="texte" id="accueil" href="index.html">Accueil</a>
+            </div>
+        </nav>
+        <section class="inscription">
+            <h1>Pourquoi tu dois rejoindre la ligue! </h1>
+            <ol>
+                <li>Pour passer du temps avec nous</li>
+                <li>Pour participer à des tournois</li>
+                <li>Pour occuper tes mercredis</li>
+            </ol>
+            <div class="container">
+                <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">Prénom</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Prénom..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Nom</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Nom..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="country">Ville</label>
+                  </div>
+                  <div class="col-75">
+                    <select id="country" name="country">
+                      <option value="australia">Rimouski</option>
+                      <option value="australia">Rivière-du-Loup</option>
+                      <option value="australia">Trois-Pistoles</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Sujet</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Écrire ici..." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <input type="submit" value="Soumettre">
+                </div>
+                </form>
+              </div>
+        </section>
+    </main>
+    <footer>
+      <p>Fabrice Lajoie - Février 2023</p>
+      <a href="#top">Cliquer ici pour remonter</a>
+    </footer>
+</body>
+</html>
